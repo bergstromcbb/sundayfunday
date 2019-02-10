@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book Search</title>
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="app" v-cloak>
+        <form @submit.prevent="search">
+            <input type="text" v-model="query" placeholder="Enter Book Name" required>
+            <button type="submit" :disabled="processing">
+                <span v-if="!processing">Search</span>
+                <span v-else>Searching...</span>
+            </button>
+        </form>
+
+        <br/>
+        <div v-if="items.length > 0">
+
+            <div v-for="item in items">
+                <img v-if="'imageLinks' in item.volumeInfo && 'thumbnail' in item.volumeInfo.imageLinks" :src="item.volumeInfo.imageLinks.thumbnail" :alt="item.volumeInfo.title">
+                <h1><strong>Title: </strong>{{ item.volumeInfo.title }}</h1>
+                <h2 v-if="'subtitle' in item.volumeInfo && item.volumeInfo.subtitle != ''"><strong>Subtitle: </strong>{{ item.volumeInfo.subtitle }}</h2>
+                <p v-if="getAuthorNames(item.volumeInfo.authors) != ''"><strong>Authors: </strong>{{ getAuthorNames(item.volumeInfo.authors) }}</p>
+                <a target="_blank" :href="item.volumeInfo.infoLink">View More about this book</a>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                query: '',
+                items: [],
+                processing: false
+            },
+            methods: {
+                getAuthorNames(authors) {
+                    if(authors)
+                        return authors.join(", ")
+                    return ""
+                },
+                search: function() {
+                    var self = this
+                    if(this.query == "") {
+                        alert("Enter Search Query.")
+                        return
+                    }
+
+                    this.processing = true
+                    this.items = []
+                    axios.get("https://www.googleapis.com/books/v1/volumes?q="+this.query)
+                        .then(function(response) {
+                            self.items = response.data.items
+                            self.processing = false
+                        }).catch(function() {
+                            self.processing = false
+                        })
+                }
+            }
+        })
+    </script>
+</body>
+</html>
