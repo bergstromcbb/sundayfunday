@@ -53,9 +53,9 @@
                 </div>
             </div>
         </header>
-        <div class="cards" v-if="items.length > 0">
+        <div class="cards flex-container" v-if="items.length > 0">
             
-            <div class="cards__item" v-for="item in items">
+            <div class="cards__item flex-item" v-for="item in items">
                 <div class="card">
                     <div class="card__image">
                         <img v-if="'imageLinks' in item.volumeInfo && 'thumbnail' in item.volumeInfo.imageLinks" :src="item.volumeInfo.imageLinks.thumbnail"
