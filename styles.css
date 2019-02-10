@@ -220,4 +220,7 @@ img {
   .flex-item {
     width: 100%;
   }
+  .text-box {
+    left: 39%;
+  }
 }
