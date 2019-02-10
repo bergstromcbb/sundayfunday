@@ -130,6 +130,7 @@ img {
 }
 #logo:after {
   content: "Books Galore";
+  position: absolute;
   left: 67px;
   top: 27px;
 }
@@ -146,8 +147,10 @@ img {
 .header {
   height: 35vh;
   background-image: linear-gradient(to right bottom, rgba(247, 165, 215, 0.8), rgba(217, 30, 77, 0.8)), url('https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
+  position: relative;
 }
 .text-box {
+  position: absolute;
   width: 75%;
   top: 38%;
   left: 50%;
