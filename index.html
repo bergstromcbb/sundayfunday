@@ -32,7 +32,6 @@
                     
                     <form @submit.prevent="search">
                         <!-- <input type="text" v-model="query" placeholder="Enter Book Name" required> -->
-                        <br />
                         <section class="content">
                                 <h2>Nariko</h2>
                                 <span class="input input--nariko">
@@ -41,14 +40,14 @@
                                         <span class="input__label-content input__label-content--nariko">Enter Book Name</span>
                                     </label>
                                 </span>
+                                <br />
+                                <button id="search-btn" type="submit" :disabled="processing">
+                                        <span v-if="!processing">Search</span>
+                                        <span v-else>Searching...</span>
+                                    </button>
                             </section>
                         			
-
-
-                        <button id="search-btn" type="submit" :disabled="processing">
-                            <span v-if="!processing">Search</span>
-                            <span v-else>Searching...</span>
-                        </button>
+                        
                     </form>
                     
                 </div>
