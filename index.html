@@ -26,6 +26,18 @@
                 <div class="heading-primary">
                     <span class="heading-primary-main">Books Galore</span>
 
+                    
+                    <form @submit.prevent="search">
+                        <input type="text" v-model="query" placeholder="Enter Book Name" required>
+                        <br />
+                        			
+
+
+                        <button id="search-btn" type="submit" :disabled="processing">
+                            <span v-if="!processing">Search</span>
+                            <span v-else>Searching...</span>
+                        </button>
+                    </form>
                     <section class="content bgcolor-7">
                             <h2>Nariko</h2>
                             <span class="input input--nariko">
@@ -47,17 +59,6 @@
                                 </label>
                             </span>
                         </section>
-                    <form @submit.prevent="search">
-                        <input type="text" v-model="query" placeholder="Enter Book Name" required>
-                        <br />
-                        			
-
-
-                        <button id="search-btn" type="submit" :disabled="processing">
-                            <span v-if="!processing">Search</span>
-                            <span v-else>Searching...</span>
-                        </button>
-                    </form>
                 </div>
             </div>
         </header>
