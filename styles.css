@@ -171,3 +171,16 @@ img {
   font-weight: 400;
   letter-spacing: 5px;
 }
+@media (max-width: 767px) {
+  .flex-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+  .flex-item {
+    width: 100%;
+  }
+}
