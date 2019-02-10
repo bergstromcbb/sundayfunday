@@ -103,10 +103,10 @@ img {
   margin: auto;
 }
 #book {
-  height: 150%;
+  height: 100%;
+  flex-wrap: wrap;
   float: right;
   border: green solid 2px;
-  z-index: 100000;
 }
 #search-btn {
   height: 40px;
