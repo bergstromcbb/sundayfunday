@@ -14,12 +14,12 @@
 .clearfix:before, .clearfix:after { content: ''; display: table; }
 .clearfix:after { clear: both; }
 
-body {
+/* body {
 	background: #f9f7f6;
 	color: #404d5b;
 	font-weight: 500;
 	font-size: 1.05em;
-}
+} */
 
 a {
 	color: #2fa0ec;

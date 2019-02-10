@@ -17,46 +17,47 @@
     <link rel="stylesheet" type="text/css" href="normalize.css" />
     <link rel="stylesheet" type="text/css" href="demo.css" />
     <link rel="stylesheet" type="text/css" href="set2.css" />
-
+    <link rel="stylesheet" type="text/css" href="component.css" />
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Outline" rel="stylesheet">
 </head>
+
 <body>
     <div id="app" v-cloak id="page-body">
         <header class="header">
             <!-- <img id="book" src="./book_burned.png" /> -->
 
-            <div class="text-box">
-
-                <div class="heading-primary">
-                    <span class="heading-primary-main">Books Galore</span>
-
-                    
-                    <form @submit.prevent="search">
-                        <!-- <input type="text" v-model="query" placeholder="Enter Book Name" required> -->
-                        <section class="content">
-                                <h2>Nariko</h2>
-                                <span class="input input--nariko">
-                                    <input type="text" v-model="query" placeholder="" required class="input__field input__field--nariko" />
-                                    <label class="input__label input__label--nariko" for="input-20">
-                                        <span class="input__label-content input__label-content--nariko">Enter Book Name</span>
-                                    </label>
-                                </span>
-                                <br />
-                                <button id="search-btn" type="submit" :disabled="processing">
-                                        <span v-if="!processing">Search</span>
-                                        <span v-else>Searching...</span>
-                                    </button>
-                            </section>
-                        			
-                        
-                    </form>
-                    
+                <div class="container demo-3">
+                    <h1 class="main-title">Books</h1>
                 </div>
+                <div class="text-box">
+
+                <form @submit.prevent="search">
+                    <!-- <input type="text" v-model="query" placeholder="Enter Book Name" required> -->
+                    <section class="content">
+                        <span class="input input--nariko">
+                            <input type="text" v-model="query" placeholder="" required class="input__field input__field--nariko" />
+                            <label class="input__label input__label--nariko" for="input-20">
+                                <span class="input__label-content input__label-content--nariko">Enter Book Name</span>
+                            </label>
+                        </span>
+                        <br />
+                        <button id="search-btn" type="submit" :disabled="processing">
+                            <span v-if="!processing">Search</span>
+                            <span v-else>Searching...</span>
+                        </button>
+                    </section>
+
+
+                </form>
+
             </div>
         </header>
         <div class="cards flex-container" v-if="items.length > 0">
-            <span id="logo">
+            <div id="logo">
                 Results
-            </span>
+            </div>
+            <br />
+
             <div class="cards__item flex-item" v-for="item in items">
                 <div class="card">
                     <div class="card__image">

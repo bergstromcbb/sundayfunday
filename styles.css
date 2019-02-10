@@ -117,24 +117,53 @@ img {
   padding: 10px;
   font-size: 70.25% !important;
 }
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OUuhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN8rsOUuhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Squada One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Squada One'), local('SquadaOne-Regular'), url(https://fonts.gstatic.com/s/squadaone/v7/BCasqZ8XsOrx4mcOk6Mtaac2XA.ttf) format('truetype');
+}
 #logo {
   font-family: 'Open Sans', sans-serif;
   color: #555;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 100px;
+  font-size: 75px;
   font-weight: 800;
   letter-spacing: -3px;
   line-height: 1;
-  padding-left: 5px;
   text-shadow: #EDEDED 3px 2px 0;
-  /* position: relative; */
+  position: relative;
 }
 #logo:after {
-  content: "Books Galore";
+  content: "results";
   position: absolute;
-  left: 67px;
-  top: 27px;
+  left: 8px;
+  top: 32px;
 }
 #logo:after {
   /*background: url(https://subtlepatterns.com/patterns/crossed_stripes.png) repeat;*/
@@ -147,16 +176,14 @@ img {
   text-shadow: none;
 }
 .header {
-  height: 45vh;
+  height: 66vh;
   background-image: linear-gradient(to right bottom, rgba(247, 165, 215, 0.8), rgba(217, 30, 77, 0.8)), url('https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
   position: relative;
 }
 .text-box {
   position: absolute;
-  width: 75%;
-  top: 38%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 35%;
+  left: 39%;
   text-align: center;
 }
 .heading-primary {
@@ -170,6 +197,16 @@ img {
   font-size: 26px;
   font-weight: 400;
   letter-spacing: 5px;
+}
+.btn:focus {
+  border: 1px solid palevioletred !important;
+  box-shadow: 0 0 3px palevioletred !important;
+  -moz-box-shadow: 0 0 3px palevioletred !important;
+  -webkit-box-shadow: 0 0 3px palevioletred !important;
+}
+.btn:focus {
+  outline-offset: 0px !important;
+  outline: none !important;
 }
 @media (max-width: 767px) {
   .flex-container {
