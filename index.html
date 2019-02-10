@@ -28,15 +28,15 @@
                     <form @submit.prevent="search">
                         <input type="text" v-model="query" placeholder="Enter Book Name" required>
                         <br />
-
+                        <span class="input input--nariko" v-if="!processing">
+                                <input class="input__field input__field--nariko" type="text" id="input-21" />
+                                <label class="input__label input__label--nariko" for="input-21">
+                                    <span class="input__label-content input__label-content--nariko">Website</span>
+                                </label>
+                        </span>
                         <button id="search-btn" type="submit" :disabled="processing">
-                            <span v-if="!processing">Search</span>
-                            <span class="input input--nariko">
-                                    <input class="input__field input__field--nariko" type="text" id="input-21" />
-                                    <label class="input__label input__label--nariko" for="input-21">
-                                        <span class="input__label-content input__label-content--nariko">Website</span>
-                                    </label>
-                            </span>
+                            <!-- <span >Search</span> -->
+                            
                             <br />
                             <span v-else>Searching...</span>
                         </button>
