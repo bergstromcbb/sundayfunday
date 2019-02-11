@@ -4,12 +4,13 @@
   color: black;
   line-height: 99px;
   font-size: 7em;
-  padding: 10px 40px;
-  text-align: center;
-  /* width: 50%; */
-  margin: auto;
+  /* padding: 10px 40px; */
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
   text-shadow: 1px 1px 25px #FFFFFF;
   text-transform: uppercase;
+  margin-left: 50px;
 }
 #result-container {
   width: 100%;
@@ -165,6 +166,7 @@
   color: black;
   line-height: 99px;
   font-size: 7em;
+  justify-content: center;
   padding: 10px 40px;
   text-align: center;
   text-shadow: 1px 1px 25px #FFFFFF;
@@ -221,6 +223,7 @@
   #oneline {
     line-height: .87;
     width: 78%;
+    justify-content: center;
   }
   #result {
     font-size: 4em;
