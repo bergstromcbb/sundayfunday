@@ -30,20 +30,20 @@ img {
 */
 #title {
   font-family: 'Bangers', cursive;
-  color: white;
+  color: rgb(253, 0, 169);
   font-size: 7em;
   padding: 10px 40px;
 text-align: center;
 width: 50%;
 margin: auto;
-/* border-radius: 20px; */
+border-radius: 20px;
   /* transform: rotate(-14deg); */
   /* padding-top: 10%; */
   /* padding-left: 26%; */
   text-shadow: 1px 1px 25px #FFFFFF;
-  /* border: 10px double white; */
+  border: 10px double white;
   text-transform: uppercase;
-  /* background: rgba(5, 174, 216, 0.678); */
+  background: rgba(5, 174, 216, 0.678);
 }
 
 .demo-3 {
@@ -74,9 +74,9 @@ margin: auto;
   flex-wrap: wrap;
   list-style: none;
   margin-top: 200px;
-  background-color: #white;
-  padding-top: 50px;
-  /* box-shadow: 0 0 21px 21px #f0f0f091; */
+  background-color: #f0f0f091;
+  padding: 0;
+  box-shadow: 0 0 21px 21px #f0f0f091;
 }
 .cards__item {
   display: flex;
@@ -142,7 +142,8 @@ margin: auto;
   height: 100vh;
 }
 .container:before {
-  background: linear-gradient(to right bottom, rgba(247, 165, 215, 0.8), rgba(217, 30, 77, 0.8)), url(stephanie-leblanc-1313565-unsplash.jpg) center / cover;
+  
+  background: url(stephanie-leblanc-1313565-unsplash.jpg) center / cover;
   content: '';
   position: absolute;
   left: 0; right: 0; top: 0; bottom: 0;
@@ -194,7 +195,7 @@ margin: auto;
   box-shadow: 0 0 21px 21px #f0f0f0b6; */
   padding-bottom: 20px;
   text-shadow: 1px 1px 25px #FFFFFF;
-  /* border: 10px double rgb(5, 174, 216); */
+  border: 10px double rgb(5, 174, 216);
   text-transform: uppercase;
   border-radius: 40px;
   background: rgba(255, 255, 255, 0.75);}
@@ -256,7 +257,7 @@ margin: auto;
 	top: 100%;
 	left: 0;
 	background: #fff;
-	border-top: 4px solid rgb(70, 67, 67);
+	border-top: 4px solid rgb(5, 174, 216);
 	-webkit-transform: translate3d(0, -3px, 0);
 	transform: translate3d(0, -3px, 0);
 	-webkit-transition: -webkit-transform 0.4s;

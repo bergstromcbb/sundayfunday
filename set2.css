@@ -193,7 +193,7 @@
 	top: 100%;
 	left: 0;
 	background: #fff;
-	border-top: 4px solid rgb(5, 174, 216);
+	border-top: 4px solid rgb(70, 67, 67);
 	-webkit-transform: translate3d(0, -3px, 0);
 	transform: translate3d(0, -3px, 0);
 	-webkit-transition: -webkit-transform 0.4s;
