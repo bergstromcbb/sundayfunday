@@ -189,7 +189,7 @@
 	outline: none;
 }
 @media (max-width: 767px) {
-  .flex-container {
+  /* .flex-container {
     text-align: center;
     display: flex;
     background: white;
@@ -200,7 +200,7 @@
   }
   .flex-item {
     width: 100%;
-  }
+  } */
   /* .text-box {
     left: 9%;
   } */
