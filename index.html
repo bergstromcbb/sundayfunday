@@ -22,20 +22,19 @@
 <body>
     <div id="app" v-cloak id="page-body" class="container">
         <header class="header">
-            <div class="demo-3">
             <div id="title">
                 Books <br /> Books <br />
+            </div>
                 <section id="oneline">
                     <section id="andmore">
                         <span id="and">and</span>
                          <br />more</section>
                      <section id="books">Books</section>
                 </section>
-            </div>
-        </div>
+            
             <div class="text-box">
                 <form @submit.prevent="search">
-                        <section class="content">
+                        <section>
                                 <span class="input input--ichiro">
                                     <input v-model="query" required class="input__field input__field--ichiro" type="text" id="input-25" />
                                     <label class="input__label input__label--ichiro" for="input-25">
@@ -47,7 +46,7 @@
                                         <span v-else>Searching...</span>
                                     </button>
             
-                            </section>
+                        </section>
                 </form>
 
             </div>

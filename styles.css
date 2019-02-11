@@ -1,12 +1,12 @@
 
 #title {
   font-family: 'Fredericka the Great', cursive;
-  color: white;
+  color: black;
   line-height: 99px;
   font-size: 7em;
   padding: 10px 40px;
   text-align: center;
-  width: 50%;
+  /* width: 50%; */
   margin: auto;
   text-shadow: 1px 1px 25px #FFFFFF;
   text-transform: uppercase;
@@ -117,7 +117,7 @@
   margin-bottom: 1.25rem;
 }
 .container {
-  position: relative;
+  /* position: relative; */
   /* height: 100vh; */
 }
 .container:before {
@@ -126,6 +126,7 @@
   position: absolute;
   left: 0; right: 0; top: 0; bottom: 0;
   z-index: -1;
+  width: 100%;
   opacity: 0.8;
 }
 #search-btn {
@@ -160,7 +161,15 @@
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  width: 440px;
+  font-family: 'Fredericka the Great', cursive;
+  color: black;
+  line-height: 99px;
+  font-size: 7em;
+  padding: 10px 40px;
+  text-align: center;
+  text-shadow: 1px 1px 25px #FFFFFF;
+  text-transform: uppercase;
+
 }
 .text-box {
   text-align: center;
@@ -204,4 +213,31 @@
   /* .text-box {
     left: 9%;
   } */
+  #books {
+    width: 190px;
+    font-size: 60px;
+  }
+
+  #oneline {
+    line-height: .87;
+    width: 78%;
+  }
+  #result {
+    font-size: 4em;
+    width: 100%;
+  }
+  #and{
+    font-size: 6vw;
+    width: 100%;
+    text-align: center;
+  }
+  #andmore {
+    font-size: 6vw;
+    line-height: 27px;
+    width: 76px;
+    padding-top: 0px;
+  }
+  #title {
+    font-size: 22vw;
+  }
 } 
