@@ -15,43 +15,46 @@
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
     <link rel="stylesheet" type="text/css" href="normalize.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="demo.css" /> -->
-    <link rel="stylesheet" type="text/css" href="set2.css" />
+    <link rel="stylesheet" type="text/css" href="set1.css" />
     <link rel="stylesheet" type="text/css" href="component.css" />
-    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Bangers|Fredericka+the+Great|Life+Savers|Luckiest+Guy|McLaren|Quicksand" rel="stylesheet"></head>
-
-
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Bangers|Fredericka+the+Great|Life+Savers|Luckiest+Guy|Quicksand" rel="stylesheet">
+</head>
 <body>
     <div id="app" v-cloak id="page-body" class="container">
         <header class="header">
             <div class="demo-3">
             <div id="title">
-                Books & Books
+                Books <br /> Books <br />
+                <section id="oneline">
+                    <section id="andmore">
+                        <span id="and">and</span>
+                         <br />more</section>
+                     <section id="books">Books</section>
+                </section>
             </div>
         </div>
             <div class="text-box">
                 <form @submit.prevent="search">
-                    <!-- <input type="text" v-model="query" placeholder="Enter Book Name" required> -->
-                    <section class="content">
-                        <span class="input input--nariko">
-                            <input type="text" v-model="query" placeholder="" required class="input__field input__field--nariko" />
-                            <label class="input__label input__label--nariko" for="input-20">
-                                <span class="input__label-content input__label-content--nariko">Enter Book Name</span>
-                            </label>
-                        </span>
-                        <br />
-                        <button id="search-btn" type="submit" :disabled="processing">
-                            <span v-if="!processing">Search</span>
-                            <span v-else>Searching...</span>
-                        </button>
-                    </section>
+                        <section class="content">
+                                <span class="input input--ichiro">
+                                    <input v-model="query" required class="input__field input__field--ichiro" type="text" id="input-25" />
+                                    <label class="input__label input__label--ichiro" for="input-25">
+                                        <span class="input__label-content input__label-content--ichiro">Enter Book Name</span>
+                                    </label>
+                                </span><br />
+                                <button id="search-btn" type="submit" :disabled="processing">
+                                        <span v-if="!processing">Search</span>
+                                        <span v-else>Searching...</span>
+                                    </button>
+            
+                            </section>
                 </form>
 
             </div>
         </header>
         <div class="cards flex-container" v-if="items.length > 0">
-            <div class="demo-3">
-                <h1 id="title">Results</h1>
+            <div id="result-container">
+                <h1 id="result">Results</h1>
             </div>
 
             <div class="cards__item flex-item" v-for="item in items">

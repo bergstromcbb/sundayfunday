@@ -1,49 +1,30 @@
-/* html { 
-  background: url(stephanie-leblanc-1313565-unsplash.jpg) no-repeat center center fixed; 
-  background-position: center bottom, left top;
-  -webkit-background-size: 80px 60px, cover;
-  -moz-background-size: 80px 60px, cover;
-  -o-background-size: 80px 60px, cover;
-  background-size: 80px 60px, cover;
-  background-repeat: repeat-x, no-repeat;
-  width: 100%;
-  height: 100vh;
-} */
-/*
-body {
-  color: #999999;
-  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  letter-spacing: 0;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -moz-font-feature-settings: "liga" on;
-}
-img {
-  height: auto;
-  vertical-align: middle;
-}
-*/
+
 #title {
-  font-family: 'Bangers', cursive;
+  font-family: 'Fredericka the Great', cursive;
   color: white;
+  line-height: 99px;
   font-size: 7em;
   padding: 10px 40px;
-text-align: center;
-width: 50%;
-margin: auto;
-/* border-radius: 20px; */
-  /* transform: rotate(-14deg); */
-  /* padding-top: 10%; */
-  /* padding-left: 26%; */
+  text-align: center;
+  width: 50%;
+  margin: auto;
   text-shadow: 1px 1px 25px #FFFFFF;
-  /* border: 10px double white; */
   text-transform: uppercase;
-  /* background: rgba(5, 174, 216, 0.678); */
+}
+#result-container {
+  width: 100%;
+}
+#result{
+  font-family: 'Fredericka the Great', cursive;
+  color: rgba(217, 30, 77, 0.8);
+  line-height: 99px;
+  font-size: 7em;
+  padding: 10px 40px;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  text-shadow: 1px 1px 25px #FFFFFF;
+  text-transform: uppercase;
 }
 
 .demo-3 {
@@ -73,10 +54,9 @@ margin: auto;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin-top: 200px;
-  background-color: #white;
+  /* margin-top: 50px; */
+  background-color: #white !important;
   padding-top: 50px;
-  /* box-shadow: 0 0 21px 21px #f0f0f091; */
 }
 .cards__item {
   display: flex;
@@ -136,81 +116,61 @@ margin: auto;
   line-height: 1.5;
   margin-bottom: 1.25rem;
 }
-
 .container {
   position: relative;
   height: 100vh;
 }
 .container:before {
-  background: linear-gradient(to right bottom, rgba(247, 165, 215, 0.8), rgba(217, 30, 77, 0.8)), url(stephanie-leblanc-1313565-unsplash.jpg) center / cover;
+  background: linear-gradient(to right bottom, rgba(247, 165, 215, 0.8), rgba(217, 30, 77, 0.8)), url('https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80') center / cover;
   content: '';
   position: absolute;
   left: 0; right: 0; top: 0; bottom: 0;
   z-index: -1;
   opacity: 0.8;
 }
-/*
-#page-body {
-  margin: auto;
-}
-#results {
-  padding: 10px 40px;
-  border: 10px double #615e5e;
-  text-transform: uppercase;
-  background: rgba(255, 255, 255, 0.425);
-  font-family: Quicksand, sans-serif;
-}
-#book-container {
-  transform: rotate(20deg);
-  margin-left: 65%;
-  padding-top: 131px;
-}
-#book {
-  width: 230px;
-  flex-wrap: wrap;
-}
-*/
 #search-btn {
   height: 54px;
   text-transform: uppercase;
   color: rgb(253, 0, 169);
-  font-family: 'McLaren', cursive;
+  font-family: 'McLaren', sans-serif;
   background: white;
   margin-top: 10px;
-  border-radius: 40px;
+  border: none;
+  /* border-radius: 40px; */
   padding: 10px 18px 10px 18px;
   font-size: 70.25% !important;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
 }
-.header {
-  height: 64vh;
+#and {
+  letter-spacing: 11px;
+  width: 98%;
+  text-align: center;
+}
+#andmore {
+  font-size: 29px;
+  line-height: 33px;
+  width: 100px;
+  padding-top: 20px;
+}
+#books {
+  width: 300px;
+  font-size: 85px;
+}
+#oneline{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 440px;
 }
 .text-box {
   text-align: center;
-  width: 30%;
-  margin-top: 110px;
   margin-left: auto;
   margin-right: auto; 
-  /* background: #f0f0f0b6;
-  box-shadow: 0 0 21px 21px #f0f0f0b6; */
   padding-bottom: 20px;
   text-shadow: 1px 1px 25px #FFFFFF;
-  /* border: 10px double rgb(5, 174, 216); */
   text-transform: uppercase;
   border-radius: 40px;
-  background: rgba(255, 255, 255, 0.75);}
-/*
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 30px;
 }
-.heading-primary-main {
-  display: block;
-  font-size: 26px;
-  font-weight: 400;
-  letter-spacing: 5px;
-}*/
 .btn:focus {
   border: 1px solid palevioletred !important;
   box-shadow: 0 0 3px palevioletred !important;
@@ -221,140 +181,18 @@ margin: auto;
   outline-offset: 0px !important;
   outline: none !important;
 }
-
-.input--nariko {
-	overflow: hidden;
-	padding-top: 2em;
-}
-
-.input__field--nariko {
-	width: 100%;
-	background: transparent;
-	opacity: 0;
-	padding: 0.35em;
-	z-index: 100;
-	color: #f18292;
-}
-
-.input__label--nariko {
-	width: 100%;
-	bottom: 0;
-	position: absolute;
-	pointer-events: none;
-	text-align: left;
-	color: rgb(253, 0, 169);
-	padding: 0 0.5em;
-	font-family: 'McLaren', cursive;
-	text-transform: uppercase;
-}
-
-.input__label--nariko::before {
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 4em;
-	top: 100%;
-	left: 0;
-	background: #fff;
-	border-top: 4px solid rgb(70, 67, 67);
-	-webkit-transform: translate3d(0, -3px, 0);
-	transform: translate3d(0, -3px, 0);
-	-webkit-transition: -webkit-transform 0.4s;
-	transition: transform 0.4s;
-	-webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-	transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-}
-
-.input__label-content--nariko {
-	padding: 0.5em 0;
-	-webkit-transform-origin: 0% 100%;
-	transform-origin: 0% 100%;
-	-webkit-transition: -webkit-transform 0.4s, color 0.4s;
-	transition: transform 0.4s, color 0.4s;
-	-webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-	transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-}
-
-.input__field--nariko:focus,
-.input--filled .input__field--nariko {
-	cursor: text;
-	opacity: 1;
-	-webkit-transition: opacity 0s 0.4s;
-	transition: opacity 0s 0.4s;
-} 
-
-.input__field--nariko:focus + .input__label--nariko::before,
-.input--filled .input__label--nariko::before {
-	-webkit-transition-delay: 0.05s;
-	transition-delay: 0.05s;
-	-webkit-transform: translate3d(0, -3.3em, 0);
-	transform: translate3d(0, -3.3em, 0);
-}
-
-.input__field--nariko:focus + .input__label--nariko .input__label-content--nariko,
-.input--filled .input__label-content--nariko {
-	color: rgb(253, 0, 169);
-	-webkit-transform: translate3d(0, -3.3em, 0) scale3d(0.81, 0.81, 1);
-	transform: translate3d(0, -3.3em, 0) scale3d(0.81, 0.81, 1);
-}
-
-.input {
-	position: relative;
-	z-index: 1;
-	display: inline-block;
-	margin: 1em;
-	max-width: 350px;
-	width: calc(100% - 2em);
-	vertical-align: top;
-}
-
-.input__field {
-	position: relative;
-	display: block;
-	float: right;
-	padding: 0.8em;
-	width: 60%;
-	border: none;
-	border-radius: 0;
-	background: #f0f0f0;
-	color: rgb(253, 0, 169);
-	font-weight: 400;
-	font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	-webkit-appearance: none; /* for box shadows to show on iOS */
+.flex-container {
+  background: white;
 }
 
 .input__field:focus {
 	outline: none;
 }
-
-.input__label {
-	display: inline-block;
-	float: right;
-	padding: 0 1em;
-	width: 40%;
-	color: rgb(253, 0, 169);
-	font-weight: bold;
-	font-size: 70.25%;
-	-webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-
-.input__label-content {
-	position: relative;
-	display: block;
-	padding: 1.6em 0;
-	width: 100%;
-}
 @media (max-width: 767px) {
   .flex-container {
     text-align: center;
     display: flex;
+    background: white;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
