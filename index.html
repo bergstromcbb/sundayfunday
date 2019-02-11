@@ -7,30 +7,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Book Search</title>
     <style>
-        [v-cloak] {
-            display: none;
-        }
+            [v-cloak] {
+                display: none;
+            }
     </style>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
     <link rel="stylesheet" type="text/css" href="normalize.css" />
-    <link rel="stylesheet" type="text/css" href="demo.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="demo.css" /> -->
     <link rel="stylesheet" type="text/css" href="set2.css" />
     <link rel="stylesheet" type="text/css" href="component.css" />
-    <link href="https://fonts.googleapis.com/css?family=Londrina+Outline" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Bangers|Fredericka+the+Great|Life+Savers|Luckiest+Guy|McLaren|Quicksand" rel="stylesheet"></head>
+
 
 <body>
-    <div id="app" v-cloak id="page-body">
+    <div id="app" v-cloak id="page-body" class="container">
         <header class="header">
-            <!-- <img id="book" src="./book_burned.png" /> -->
-
-                <div class="container demo-3">
-                    <h1 class="main-title">Books</h1>
-                </div>
-                <div class="text-box">
-
+            <div id="title">
+                Books & Books
+            </div>
+            <div class="text-box">
                 <form @submit.prevent="search">
                     <!-- <input type="text" v-model="query" placeholder="Enter Book Name" required> -->
                     <section class="content">
@@ -46,17 +43,14 @@
                             <span v-else>Searching...</span>
                         </button>
                     </section>
-
-
                 </form>
 
             </div>
         </header>
         <div class="cards flex-container" v-if="items.length > 0">
-            <div id="logo">
-                Results
+            <div class="demo-3">
+                <h1 id="title">Results</h1>
             </div>
-            <br />
 
             <div class="cards__item flex-item" v-for="item in items">
                 <div class="card">

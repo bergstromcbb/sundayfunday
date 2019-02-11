@@ -34,6 +34,16 @@ img {
   vertical-align: middle;
 }
 
+#title {
+    font-family: 'Luckiest Guy', cursive;
+    color: white;
+    font-size: 6em;
+    transform: rotate(-14deg);
+    padding-top: 10%;
+    padding-left: 26%;
+    text-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+}
+
 .btn {
   background-color: white;
   border: 1px solid @gray-light;
@@ -100,16 +110,6 @@ img {
   overflow: hidden;
   position: relative;
   transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);;
-//   &::before {
-//     content: "";
-// 	  display: block;
-//     padding-top: 56.25%; // 16:9 aspect ratio
-//   }
-//   @media(min-width: 40rem) {
-//     &::before {
-//       padding-top: 66.6%; // 3:2 aspect ratio
-//     }
-//   }
 }
 
 .card__title {
@@ -131,11 +131,23 @@ img {
     margin: auto;
 }
 
+#results {
+    padding: 10px 40px;
+    border: 10px double rgb(97, 94, 94);
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.425);
+    font-family: Quicksand, sans-serif;
+}
+
+#book-container {
+    transform: rotate(20deg);
+    margin-left: 65%;
+    padding-top: 131px;
+}
+
 #book {
-    height: 100%;
+    width: 230px;
     flex-wrap: wrap;
-    float: right;
-    border: green solid 2px;
 }
 
 #search-btn {
@@ -148,38 +160,6 @@ img {
     font-size: 70.25% !important;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
-@import url(https://fonts.googleapis.com/css?family=Squada+One);
-
-#logo {
-  font-family: 'Open Sans', sans-serif;
-  color: #555;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 75px;
-  font-weight: 800;
-  letter-spacing: -3px;
-  line-height: 1;
-  text-shadow: #EDEDED 3px 2px 0;
-  position: relative;
-}
-#logo:after {
-  content:"results";
-  position: absolute;
-  left: 8px;
-  top: 32px;
-}
-#logo:after {
-  /*background: url(https://subtlepatterns.com/patterns/crossed_stripes.png) repeat;*/
-  background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
-  background-size: 4px 4px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  z-index: -5;
-  display: block;
-  text-shadow: none;
-}
-
 .header {
     height: 66vh;
     background-image: 
@@ -188,15 +168,12 @@ img {
    rgba(217, 30, 77, 0.8)),
    url('https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
     position: relative; 
-    // clip-path: polygon(0 0, 100% 0, 100% 32vh, 0 100%);
 }
 
 .text-box {
     position: absolute;
-    // width: 75%;
     top: 35%;
     left: 39%;
-    // transform: translate(-50%, -50%);
     text-align: center;
 }
 
@@ -225,6 +202,8 @@ img {
     outline-offset: 0px !important;
     outline: none !important;
     }
+
+
 
 
 // MEDIA QUERIES

@@ -17,7 +17,7 @@
 	border: none;
 	border-radius: 0;
 	background: #f0f0f0;
-	color: #aaa;
+	color: rgb(253, 0, 169);
 	font-weight: 400;
 	font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	-webkit-appearance: none; /* for box shadows to show on iOS */
@@ -32,7 +32,7 @@
 	float: right;
 	padding: 0 1em;
 	width: 40%;
-	color: #696969;
+	color: rgb(253, 0, 169);
 	font-weight: bold;
 	font-size: 70.25%;
 	-webkit-font-smoothing: antialiased;
@@ -179,8 +179,10 @@
 	position: absolute;
 	pointer-events: none;
 	text-align: left;
-	color: white;
+	color: rgb(253, 0, 169);
 	padding: 0 0.5em;
+	font-family: 'McLaren', cursive;
+	text-transform: uppercase;
 }
 
 .input__label--nariko::before {
@@ -191,7 +193,7 @@
 	top: 100%;
 	left: 0;
 	background: #fff;
-	border-top: 4px solid #9B9F9F;
+	border-top: 4px solid rgb(5, 174, 216);
 	-webkit-transform: translate3d(0, -3px, 0);
 	transform: translate3d(0, -3px, 0);
 	-webkit-transition: -webkit-transform 0.4s;
@@ -228,7 +230,7 @@
 
 .input__field--nariko:focus + .input__label--nariko .input__label-content--nariko,
 .input--filled .input__label-content--nariko {
-	color: #6B6E6E;
+	color: rgb(253, 0, 169);
 	-webkit-transform: translate3d(0, -3.3em, 0) scale3d(0.81, 0.81, 1);
 	transform: translate3d(0, -3.3em, 0) scale3d(0.81, 0.81, 1);
 }

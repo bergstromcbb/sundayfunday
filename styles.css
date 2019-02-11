@@ -1,11 +1,15 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-html {
-  background-color: #f0f0f0;
-}
+/* html { 
+  background: url(stephanie-leblanc-1313565-unsplash.jpg) no-repeat center center fixed; 
+  background-position: center bottom, left top;
+  -webkit-background-size: 80px 60px, cover;
+  -moz-background-size: 80px 60px, cover;
+  -o-background-size: 80px 60px, cover;
+  background-size: 80px 60px, cover;
+  background-repeat: repeat-x, no-repeat;
+  width: 100%;
+  height: 100vh;
+} */
+/*
 body {
   color: #999999;
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -23,6 +27,25 @@ img {
   height: auto;
   vertical-align: middle;
 }
+*/
+#title {
+  font-family: 'Luckiest Guy', cursive;
+  color: rgb(253, 0, 169);
+  font-size: 6em;
+  transform: rotate(-14deg);
+  padding-top: 10%;
+  padding-left: 26%;
+  text-shadow: 1px 1px 25px #FFFFFF;
+}
+
+.content {
+  font-size: 200%;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+/* book cards */
+
 .btn {
   background-color: white;
   border: 1px solid #cccccc;
@@ -38,8 +61,10 @@ img {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin: 0;
+  margin-top: 200px;
+  background-color: #f0f0f091;
   padding: 0;
+  box-shadow: 0 0 21px 21px #f0f0f091;
 }
 .cards__item {
   display: flex;
@@ -99,93 +124,64 @@ img {
   line-height: 1.5;
   margin-bottom: 1.25rem;
 }
+
+.container {
+  position: relative;
+  height: 100vh;
+}
+.container:before {
+  background: url(stephanie-leblanc-1313565-unsplash.jpg) center / cover;
+  content: '';
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  z-index: -1;
+  opacity: 0.8;
+}
+/*
 #page-body {
   margin: auto;
 }
-#book {
-  height: 100%;
-  flex-wrap: wrap;
-  float: right;
-  border: green solid 2px;
-}
-#search-btn {
-  height: 40px;
+#results {
+  padding: 10px 40px;
+  border: 10px double #615e5e;
   text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.425);
+  font-family: Quicksand, sans-serif;
+}
+#book-container {
+  transform: rotate(20deg);
+  margin-left: 65%;
+  padding-top: 131px;
+}
+#book {
+  width: 230px;
+  flex-wrap: wrap;
+}
+*/
+#search-btn {
+  height: 54px;
+  text-transform: uppercase;
+  color: rgb(253, 0, 169);
+  font-family: 'McLaren', cursive;
   background: white;
   margin-top: 10px;
-  border-radius: 20px;
-  padding: 10px;
+  border-radius: 40px;
+  padding: 10px 18px 10px 18px;
   font-size: 70.25% !important;
 }
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OUuhs.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 800;
-  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN8rsOUuhs.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Squada One';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Squada One'), local('SquadaOne-Regular'), url(https://fonts.gstatic.com/s/squadaone/v7/BCasqZ8XsOrx4mcOk6Mtaac2XA.ttf) format('truetype');
-}
-#logo {
-  font-family: 'Open Sans', sans-serif;
-  color: #555;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 75px;
-  font-weight: 800;
-  letter-spacing: -3px;
-  line-height: 1;
-  text-shadow: #EDEDED 3px 2px 0;
-  position: relative;
-}
-#logo:after {
-  content: "results";
-  position: absolute;
-  left: 8px;
-  top: 32px;
-}
-#logo:after {
-  /*background: url(https://subtlepatterns.com/patterns/crossed_stripes.png) repeat;*/
-  background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
-  background-size: 4px 4px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  z-index: -5;
-  display: block;
-  text-shadow: none;
-}
 .header {
-  height: 66vh;
-  background-image: linear-gradient(to right bottom, rgba(247, 165, 215, 0.8), rgba(217, 30, 77, 0.8)), url('https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
-  position: relative;
+  height: 64vh;
 }
 .text-box {
-  position: absolute;
-  top: 35%;
-  left: 39%;
   text-align: center;
+  width: 30%;
+  margin-top: 110px;
+  margin-left: auto;
+  margin-right: auto; 
+  background: #f0f0f0b6;
+  box-shadow: 0 0 21px 21px #f0f0f0b6;
 }
+/*
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
@@ -197,7 +193,7 @@ img {
   font-size: 26px;
   font-weight: 400;
   letter-spacing: 5px;
-}
+}*/
 .btn:focus {
   border: 1px solid palevioletred !important;
   box-shadow: 0 0 3px palevioletred !important;
@@ -207,6 +203,136 @@ img {
 .btn:focus {
   outline-offset: 0px !important;
   outline: none !important;
+}
+
+.input--nariko {
+	overflow: hidden;
+	padding-top: 2em;
+}
+
+.input__field--nariko {
+	width: 100%;
+	background: transparent;
+	opacity: 0;
+	padding: 0.35em;
+	z-index: 100;
+	color: #f18292;
+}
+
+.input__label--nariko {
+	width: 100%;
+	bottom: 0;
+	position: absolute;
+	pointer-events: none;
+	text-align: left;
+	color: rgb(253, 0, 169);
+	padding: 0 0.5em;
+	font-family: 'McLaren', cursive;
+	text-transform: uppercase;
+}
+
+.input__label--nariko::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 4em;
+	top: 100%;
+	left: 0;
+	background: #fff;
+	border-top: 4px solid rgb(5, 174, 216);
+	-webkit-transform: translate3d(0, -3px, 0);
+	transform: translate3d(0, -3px, 0);
+	-webkit-transition: -webkit-transform 0.4s;
+	transition: transform 0.4s;
+	-webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.input__label-content--nariko {
+	padding: 0.5em 0;
+	-webkit-transform-origin: 0% 100%;
+	transform-origin: 0% 100%;
+	-webkit-transition: -webkit-transform 0.4s, color 0.4s;
+	transition: transform 0.4s, color 0.4s;
+	-webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.input__field--nariko:focus,
+.input--filled .input__field--nariko {
+	cursor: text;
+	opacity: 1;
+	-webkit-transition: opacity 0s 0.4s;
+	transition: opacity 0s 0.4s;
+} 
+
+.input__field--nariko:focus + .input__label--nariko::before,
+.input--filled .input__label--nariko::before {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+	-webkit-transform: translate3d(0, -3.3em, 0);
+	transform: translate3d(0, -3.3em, 0);
+}
+
+.input__field--nariko:focus + .input__label--nariko .input__label-content--nariko,
+.input--filled .input__label-content--nariko {
+	color: rgb(253, 0, 169);
+	-webkit-transform: translate3d(0, -3.3em, 0) scale3d(0.81, 0.81, 1);
+	transform: translate3d(0, -3.3em, 0) scale3d(0.81, 0.81, 1);
+}
+
+.input {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	margin: 1em;
+	max-width: 350px;
+	width: calc(100% - 2em);
+	vertical-align: top;
+}
+
+.input__field {
+	position: relative;
+	display: block;
+	float: right;
+	padding: 0.8em;
+	width: 60%;
+	border: none;
+	border-radius: 0;
+	background: #f0f0f0;
+	color: rgb(253, 0, 169);
+	font-weight: 400;
+	font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	-webkit-appearance: none; /* for box shadows to show on iOS */
+}
+
+.input__field:focus {
+	outline: none;
+}
+
+.input__label {
+	display: inline-block;
+	float: right;
+	padding: 0 1em;
+	width: 40%;
+	color: rgb(253, 0, 169);
+	font-weight: bold;
+	font-size: 70.25%;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.input__label-content {
+	position: relative;
+	display: block;
+	padding: 1.6em 0;
+	width: 100%;
 }
 @media (max-width: 767px) {
   .flex-container {
@@ -223,4 +349,4 @@ img {
   .text-box {
     left: 9%;
   }
-}
+} 

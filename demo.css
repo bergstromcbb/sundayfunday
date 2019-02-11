@@ -39,7 +39,7 @@ a:hover, a:focus {
 
 .content {
 	font-size: 150%;
-	padding: 3em 0;
+	/* padding: 3em 0; */
 }
 
 .content h2 {
