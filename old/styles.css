@@ -1,0 +1,216 @@
+#title {
+  font-family: 'Fredericka the Great', cursive;
+  color: #464545;
+  line-height: 109px;
+  font-size: 7em;
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  text-shadow: 1px 1px 25px #FFFFFF;
+  text-transform: uppercase;
+  margin-left: 50px;
+}
+#result-container {
+  width: 100%;
+}
+#result {
+  font-family: 'Fredericka the Great', cursive;
+  color: rgba(235, 48, 141, 0.8);
+  line-height: 99px;
+  font-size: 7em;
+  padding: 10px 40px;
+  display: flex;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  text-shadow: 1px 1px 6px #464545;
+  text-transform: uppercase;
+}
+.error {
+  color: red;
+}
+/* book cards */
+.btn {
+  background-color: white;
+  border: 1px solid #cccccc;
+  color: #696969;
+  padding: 0.5rem;
+  text-transform: lowercase;
+}
+.btn--block {
+  display: block;
+  width: 100%;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  /* margin-top: 50px; */
+  background-color: white !important;
+  padding-top: 50px;
+}
+.cards__item {
+  display: flex;
+  padding: 1rem;
+}
+@media (min-width: 40rem) {
+  .cards__item {
+    width: 50%;
+  }
+}
+@media (min-width: 56rem) {
+  .cards__item {
+    width: 30%;
+  }
+}
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  overflow: hidden;
+}
+.card:hover .card__image {
+  filter: contrast(100%);
+}
+.card__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(70%);
+  margin: 16px auto 0 auto;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+}
+.card__title {
+  color: #696969;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.card__text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+.container:before {
+  background: linear-gradient(to right bottom, rgba(247, 165, 215, 0.8), rgba(217, 30, 77, 0.8)), url('https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80') center / cover;
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  opacity: 0.8;
+}
+#search-btn {
+  height: 54px;
+  text-transform: uppercase;
+  color: rgba(217, 30, 77, 0.8);
+  font-family: 'McLaren', sans-serif;
+  background: white;
+  margin-top: 10px;
+  font-weight: bold;
+  border: none;
+  padding: 10px 18px 10px 18px;
+  font-size: 70.25% !important;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+}
+#and {
+  letter-spacing: 11px;
+  width: 98%;
+  text-align: center;
+}
+#andmore {
+  font-size: 29px;
+  line-height: 33px;
+  width: 100px;
+  padding-top: 20px;
+}
+#books {
+  width: 300px;
+  font-size: 85px;
+}
+#oneline {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  font-family: 'Fredericka the Great', cursive;
+  color: #464545;
+  line-height: 99px;
+  font-size: 7em;
+  justify-content: center;
+  padding: 0px 40px;
+  text-align: center;
+  text-shadow: 1px 1px 25px #FFFFFF;
+  text-transform: uppercase;
+}
+.text-box {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  text-shadow: 1px 1px 25px #FFFFFF;
+  text-transform: uppercase;
+  border-radius: 40px;
+}
+.flex-container {
+  background: white;
+}
+.input__field:focus {
+  outline: none;
+}
+@media (max-width: 767px) {
+  #books {
+    width: 190px;
+    font-size: 60px;
+  }
+  #oneline {
+    line-height: 0.87;
+    width: 78%;
+    margin: 0px 50px 50px -11px;
+    padding: 8px 40px;
+    justify-content: center;
+  }
+  #result {
+    display: flex;
+    justify-content: center;
+    font-size: 4em;
+    padding: 0px 40px;
+  }
+  #and {
+    font-size: 6vw;
+    width: 100%;
+    text-align: center;
+  }
+  #andmore {
+    font-size: 6vw;
+    line-height: 27px;
+    width: 76px;
+    padding-top: 0px;
+  }
+  #title {
+    font-size: 22vw;
+    line-height: 85px;
+    margin: 50px 50px 0px 50px;
+  }
+  .cards {
+    display: block;
+  }
+}

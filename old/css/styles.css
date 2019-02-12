@@ -1,7 +1,6 @@
-
 #title {
   font-family: 'Fredericka the Great', cursive;
-  color: rgb(70, 69, 69);
+  color: #464545;
   line-height: 109px;
   font-size: 7em;
   display: flex;
@@ -11,10 +10,20 @@
   text-transform: uppercase;
   margin-left: 50px;
 }
+#white {
+  background: white;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  /* margin-top: 50px; */
+  padding-top: 50px;
+  
+}
 #result-container {
   width: 100%;
 }
-#result{
+#result {
   font-family: 'Fredericka the Great', cursive;
   color: rgba(235, 48, 141, 0.8);
   line-height: 99px;
@@ -24,22 +33,13 @@
   text-align: center;
   width: 50%;
   margin: auto;
-  text-shadow: 1px 1px 6px rgb(70, 69, 69);
+  text-shadow: 1px 1px 6px #464545;
   text-transform: uppercase;
 }
-
-.demo-3 {
-  padding-top: 30px;
+.error {
+  color: red;
 }
-
-.content {
-  font-size: 200%;
-  font-weight: 200;
-  letter-spacing: 2px;
-}
-
 /* book cards */
-
 .btn {
   background-color: white;
   border: 1px solid #cccccc;
@@ -56,7 +56,7 @@
   flex-wrap: wrap;
   list-style: none;
   /* margin-top: 50px; */
-  background-color: #white !important;
+  background-color: white !important;
   padding-top: 50px;
 }
 .cards__item {
@@ -121,7 +121,10 @@
   background: linear-gradient(to right bottom, rgba(247, 165, 215, 0.8), rgba(217, 30, 77, 0.8)), url('https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80') center / cover;
   content: '';
   position: absolute;
-  left: 0; right: 0; top: 0; bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   z-index: -1;
   width: 100%;
   opacity: 0.8;
@@ -154,12 +157,12 @@
   width: 300px;
   font-size: 85px;
 }
-#oneline{
+#oneline {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
   font-family: 'Fredericka the Great', cursive;
-  color: rgb(70, 69, 69);
+  color: #464545;
   line-height: 99px;
   font-size: 7em;
   justify-content: center;
@@ -167,42 +170,26 @@
   text-align: center;
   text-shadow: 1px 1px 25px #FFFFFF;
   text-transform: uppercase;
-
 }
 .text-box {
   text-align: center;
   margin-left: auto;
-  margin-right: auto; 
+  margin-right: auto;
   padding-bottom: 20px;
   text-shadow: 1px 1px 25px #FFFFFF;
   text-transform: uppercase;
   border-radius: 40px;
 }
-.btn:focus {
-  border: 1px solid palevioletred !important;
-  box-shadow: 0 0 3px palevioletred !important;
-  -moz-box-shadow: 0 0 3px palevioletred !important;
-  -webkit-box-shadow: 0 0 3px palevioletred !important;
-}
-.btn:focus {
-  outline-offset: 0px !important;
-  outline: none !important;
-}
-.flex-container {
-  background: white;
-}
-
 .input__field:focus {
-	outline: none;
+  outline: none;
 }
 @media (max-width: 767px) {
   #books {
     width: 190px;
     font-size: 60px;
   }
-
   #oneline {
-    line-height: .87;
+    line-height: 0.87;
     width: 78%;
     margin: 0px 50px 50px -11px;
     padding: 8px 40px;
@@ -214,7 +201,7 @@
     font-size: 4em;
     padding: 0px 40px;
   }
-  #and{
+  #and {
     font-size: 6vw;
     width: 100%;
     text-align: center;
@@ -229,8 +216,8 @@
     font-size: 22vw;
     line-height: 85px;
     margin: 50px 50px 0px 50px;
-  }  
+  }
   .cards {
     display: block;
   }
-} 
+}
