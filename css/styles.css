@@ -48,13 +48,15 @@
   display: flex;
   text-align: center;
   background: white;
-  width: 100%;
+  justify-content: center;
+  /* width: 100%; */
   margin: auto;
   text-shadow: 1px 1px 6px #464545;
   text-transform: uppercase;
 }
 .error {
   color: red;
+  width: 100%;
 }
 /* book cards */
 .btn {
@@ -215,12 +217,18 @@
     justify-content: center;
     font-size: 4em;
     padding: 0px 40px;
+    width: 81%;
   }  
   #result {
     display: flex;
     justify-content: center;
-    font-size: 4em;
-    padding: 0px 40px;
+    font-size: 5em;
+    height: 100%;
+    width: 81%;
+    padding: 60px 40px 68px 40px;
+  }
+  .error {
+    
   }
   #and {
     font-size: 6vw;
